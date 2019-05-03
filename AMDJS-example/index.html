@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="require.js"></script>
+        <script type="text/javascript">
+            // 本地加载方式2
+            require(["moduleB"],function(moduleb){
+                alert('AMD:'+moduleb.add(1, 1));
+            })
+        </script>
+    </head>
+    <body>
+      <span>模块B引入模块A的add方法</span>
+    </body>
+</html>
